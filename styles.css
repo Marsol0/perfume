@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: rgba(232, 225, 208, 0.5);
+    
+    
+    
+}
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    min-width: 400px;
+    justify-content: center;
+}
+img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    
+
+}
+.perfume-p {
+    letter-spacing: 4px;
+    font-size: 20px;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.419);
+}
+h1 {
+    font-size: clamp(1rem, 0.8rem + 1vw, 3rem);
+    margin-top: 1rem;
+    font-size: clamp(1rem, 0.8rem + 1vw, 3rem);
+}
+.price-h1 {
+    color: rgb(12, 98, 12);
+}
+h6 {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.419);
+    font-size: 20px;
+}
+
+h1,p, button {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.about {
+    margin-top: 1rem;
+    letter-spacing: 1px;
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.642);
+}
+main {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: aliceblue;
+   align-items: flex-start;
+   
+   gap: 1rem;
+   margin: 2rem;
+   height: 90vh;
+}
+.perfume-p {
+    margin-top: 1rem;
+    
+    width: 100%;
+}
+.price {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    
+    gap: 3rem;
+}
+button {
+    margin-top: 2rem;
+    width: 85%;
+    height: 90px;
+    border-radius: 10px;
+    background-color: rgb(12, 98, 12);
+    color: white;
+}
+.desk-photo {
+    display: none;
+}
+
+
+@media(min-width:760px) {
+    main {
+        position: relative;
+        top: 150px;
+        min-width: 80%;
+        width: 70%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 60vh;
+        
+        
+        
+    }
+    button {
+        position: absolute;
+        height: 60px;
+        bottom: 20px;
+        width: 40%;
+    }
+    .mob-photo {
+        display: none;
+    }
+    .desk-photo {
+        display: inline-block;
+        height: 60vh;
+        object-fit: cover;
+    }
+    .nth-for-now {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    
+    
+}
